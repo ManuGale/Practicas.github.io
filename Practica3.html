@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3</title>
+    <style>
+        body {
+            background-color: #e6e6fa; /* Fondo morado más claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px; /* Espacio alrededor del contenedor */
+        }
+        .container {
+            background-color: #6a5acd; /* Color de fondo de la caja */
+            color: white; /* Color del texto */
+            padding: 30px; /* Espacio interno aumentado */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Aumentar ancho máximo */
+            text-align: left; /* Alinear texto a la izquierda */
+        }
+        h1 {
+            text-align: center; /* Título centrado */
+            margin-bottom: 20px;
+        }
+        h2, h3, h4 {
+            margin: 15px 0; /* Espaciado ajustado */
+        }
+        ul, ol {
+            margin: 15px 0; /* Espaciado ajustado */
+            padding-left: 20px; /* Espacio a la izquierda */
+            list-style-position: inside; /* Listas dentro del contenedor */
+        }
+        .btn {
+            display: block; /* Botón en bloque */
+            width: 100%; /* Ancho completo */
+            background-color: white; /* Fondo del botón */
+            color: #6a5acd; /* Color del texto del botón */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center; /* Centrar texto del botón */
+        }
+        .btn:hover {
+            background-color: #f0f0f0; /* Color al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Listas de HTML</h1>
+
+      
+
+        <h2>Docentes</h2>
+        <b>Lista ordenada</b>
+        <ol type="a">
+            <li>Paola del Castillo</li>
+            <li>Pedro Chi</li>
+            <li>Juan Manuel Ucan</li>
+        </ol>
+
+        <h2>Alumnos Aprobados</h2>
+        <b>Alumnos aprobados en orden descendente</b>
+        <ol reversed="3" type="1">
+            <li>Manuel Galeana Fernandez</li>
+            <li>Jose Luis Arredondo</li>
+            <li>Russell Alesio Sanchez</li>
+        </ol>
+
+        <h2>Alumnos Reprobados</h2>
+        <b>Alumnos reprobados en orden ascendente</b>
+        <ol type="I" start="10">
+            <li>Roberto Alcantara</li>
+            <li>Jusit Toledo Bernal</li>
+            <li>Jose Luis Arredondo si el de nuevo</li>
+        </ol>
+
+        <a href="index.html">
+            <button class="btn">Regresar a INDEX</button>
+        </a>
+    </div>
+
+</body>
+</html>
