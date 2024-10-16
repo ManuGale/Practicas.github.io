@@ -4,153 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica 4</title>
+    <style>
+        body {
+            background-color: #e6e6fa; /* Fondo morado más claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #6a5acd; /* Color de fondo de la caja */
+            color: white; /* Color del texto */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: center;
+        }
+        .tables-container {
+            display: flex; /* Usar flexbox para alinear tablas */
+            justify-content: center; /* Centrar las tablas */
+            gap: 20px; /* Espacio entre tablas */
+        }
+        table {
+            border-collapse: collapse;
+            width: 40%; /* Ancho reducido de las tablas */
+            margin: 10px; /* Espaciado interno de las tablas */
+            background-color: #fff; /* Color de fondo de la tabla */
+            border-radius: 10px;
+            overflow: hidden; /* Para que los bordes redondeados se vean bien */
+        }
+        th, td {
+            border: 2px solid #6a5acd; /* Color de borde */
+            padding: 10px;
+            text-align: center;
+            color: #333; /* Color del texto */
+        }
+        caption {
+            font-weight: bold;
+            margin: 10px 0;
+            color: #6a5acd; /* Color del título */
+        }
+        .btn {
+            background-color: white; /* Fondo del botón */
+            color: #6a5acd; /* Color del texto del botón */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #f0f0f0; /* Color al pasar el ratón */
+        }
+    </style>
 </head>
 <body>
-    
-    <!-- Etiquetas 
-        <table></table>
-        <th></th> si quiero poner un encabezado a la tabla 
-        <th colspan=""></th> ayuda a colocar la agrupacion de columnas de encabezado 
-        <tr></tr> indica que solo se trabaja en una fila  
-        <td></td> valor que se va ingresar  a una fila 
-        <caption></caption> titulo
-        <colgroup></colgroup>
-        <col>
-        <thead></thead>
-        <tbody></tbody>  
-        <tfoot></tfoot>      
-        -->
 
-        <table border="2">
-            <caption>Ejemplo</caption>
-            <tr>
-                <th colspan="2">columna combinada</th>
-                <th> celda</th>
-                <th colspan="2">columna combinada</th>
-                <th>columna 3</th>
-            </tr>
-            <tr>
-                <td> celda 1</td>
-                <td> celda 1</td>
-                <td colspan> celda 2</td>
-                <td>celda 3</td>
-                <td colspan="2">sizas</td>
-            </tr>
+    <div class="container">
+        <a href="index.html">
+            <button class="btn">Regresar a INDEX</button>
+        </a>
 
-            
-            <tr>
-                <td rowspan="2">valor 1</td>
-                <td>valor 2</td>
-                <td>calor 3</td>
-                <td>valor 4</td>
-            </tr>
-            <tr>
-                <td>valor 5</td>
-                <td>calor 6</td>
-                <td>valor 7</td>
-            </tr>
+        <div class="tables-container">
+            <!-- Ejemplo -->
+            <table>
+                <caption>Ejemplo</caption>
+                <tr>
+                    <th colspan="2">columna combinada</th>
+                    <th>celda</th>
+                    <th colspan="2">columna combinada</th>
+                    <th>columna 3</th>
+                </tr>
+                <tr>
+                    <td>celda 1</td>
+                    <td>celda 1</td>
+                    <td colspan="2">celda 2</td>
+                    <td>celda 3</td>
+                    <td>tamaño</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">valor 1</td>
+                    <td>valor 2</td>
+                    <td>valor 3</td>
+                    <td>valor 4</td>
+                </tr>
+                <tr>
+                    <td>valor 5</td>
+                    <td>valor 6</td>
+                    <td>valor 7</td>
+                </tr>
+            </table>
 
-        </table>
-        <br>
-        <br><br><br>
-
-        <table border="2">
-            <caption> Ventas primer Semestre</caption>
-            <thead>
-                <tr>
-                    <th rowspan="2"> Mes </th>
-                    <th colspan="4"> Concepto </th>
-                    <th rowspan="2"> Total </th>
-                </tr>
-                <tr>
-                    <th> Depto 1</th>
-                    <th> Depto 2</th>
-                    <th> Depto 3</th>
-                    <th> Depto 4</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <th> Enero </th>
-                    <td>$ 2500</td>
-                    <td>$ 1500</td>
-                    <td>$ 3500</td>
-                    <td>$ 1000</td>
-                    <td>$ 8500</td>
-                </tr>
-                <tr>
-                    <th> Febrero </th>
-                    <td>$ 2000</td>
-                    <td>$ 1000</td>
-                    <td>$ 3000</td>
-                    <td>$ 1000</td>
-                    <td>$ 7000</td>
-                </tr>
-                <tr>
-                    <th> Marzo </th>
-                    <td>$ 500</td>
-                    <td>$ 1500</td>
-                    <td>$ 500</td>
-                    <td>$ 1000</td>
-                    <td>$ 3500</td>
-                </tr>
-                <tr>
-                    <th> Abril </th>
-                    <td>$ ----</td>
-                    <td>$ 500</td>
-                    <td>$ 500</td>
-                    <td>$ 1000</td>
-                    <td>$ 2000</td>
-                </tr>
-                <tr>
-                    <th> Mayo </th>
-                    <td>$ 2500</td>
-                    <td>$ ----</td>
-                    <td>$ 3000</td> 
-                    <td>$ 1000</td>
-                    <td>$ 6500</td>
-                </tr>
-                <tr>
-                    <th> Junio </th>
-                    <td>$ 500</td>
-                    <td>$ 1500</td>
-                    <td>$ ----</td>
-                    <td>$ 1000</td>
-                    <td>$ 3000</td>
-                </tr>
-
-
-                <tr>
-                    <th rowspan="3"> Totales </th>
+            <!-- Ejercicio -->
+            <table>
+                <caption>Ventas primer Semestre</caption>
+                <thead>
                     <tr>
-                        <td>$8000</td>
-                        <td>$6000</td>
-                        <td>$10500</td>
-                        <td>$6000</td>
-                        <td>$305000</td>
+                        <th rowspan="2">Mes</th>
+                        <th colspan="4">Concepto</th>
+                        <th rowspan="2">Total</th>
                     </tr>
                     <tr>
-                        <td>Depto 1</td>
-                        <td>Depto 2</td>
-                        <td>Depto 3</td>
-                        <td>Depto 4</td>
-                        <th>TOTAL</th>
-                    </tr>                                    
-                </tr>
-
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <td colspan="7"> Manuel Galeana Practica</td>
-                </tr>
-            </tfoot>
-
-        </table>
-
-
-        
+                        <th>Depto 1</th>
+                        <th>Depto 2</th>
+                        <th>Depto 3</th>
+                        <th>Depto 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Enero</th>
+                        <td>$ 2500</td>
+                        <td>$ 1500</td>
+                        <td>$ 3500</td>
+                        <td>$ 1000</td>
+                        <td>$ 8500</td>
+                    </tr>
+                    <tr>
+                        <th>Febrero</th>
+                        <td>$ 2000</td>
+                        <td>$ 1000</td>
+                        <td>$ 3000</td>
+                        <td>$ 1000</td>
+                        <td>$ 7000</td>
+                    </tr>
+                    <tr>
+                        <th>Marzo</th>
+                        <td>$ 500</td>
+                        <td>$ 1500</td>
+                        <td>$ 500</td>
+                        <td>$ 1000</td>
+                        <td>$ 3500</td>
+                    </tr>
+                    <tr>
+                        <th>Abril</th>
+                        <td>$ ----</td>
+                        <td>$ 500</td>
+                        <td>$ 500</td>
+                        <td>$ 1000</td>
+                        <td>$ 2000</td>
+                    </tr>
+                    <tr>
+                        <th>Mayo</th>
+                        <td>$ 2500</td>
+                        <td>$ ----</td>
+                        <td>$ 3000</td>
+                        <td>$ 1000</td>
+                        <td>$ 6500</td>
+                    </tr>
+                    <tr>
+                        <th>Junio</th>
+                        <td>$ 500</td>
+                        <td>$ 1500</td>
+                        <td>$ ----</td>
+                        <td>$ 1000</td>
+                        <td>$ 3000</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Totales</th>
+                        <tr>
+                            <td>$8000</td>
+                            <td>$6000</td>
+                            <td>$10500</td>
+                            <td>$6000</td>
+                            <td>$305000</td>
+                        </tr>
+                        <tr>
+                            <td>Depto 1</td>
+                            <td>Depto 2</td>
+                            <td>Depto 3</td>
+                            <td>Depto 4</td>
+                            <th>TOTAL</th>
+                        </tr>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="7">Manuel Galeana Practica</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
 
 </body>
 </html>
