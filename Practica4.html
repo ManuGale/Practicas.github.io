@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 4</title>
+</head>
+<body>
+    
+    <!-- Etiquetas 
+        <table></table>
+        <th></th> si quiero poner un encabezado a la tabla 
+        <th colspan=""></th> ayuda a colocar la agrupacion de columnas de encabezado 
+        <tr></tr> indica que solo se trabaja en una fila  
+        <td></td> valor que se va ingresar  a una fila 
+        <caption></caption> titulo
+        <colgroup></colgroup>
+        <col>
+        <thead></thead>
+        <tbody></tbody>  
+        <tfoot></tfoot>      
+        -->
+
+        <table border="2">
+            <caption>Ejemplo</caption>
+            <tr>
+                <th colspan="2">columna combinada</th>
+                <th> celda</th>
+                <th colspan="2">columna combinada</th>
+                <th>columna 3</th>
+            </tr>
+            <tr>
+                <td> celda 1</td>
+                <td> celda 1</td>
+                <td colspan> celda 2</td>
+                <td>celda 3</td>
+                <td colspan="2">sizas</td>
+            </tr>
+
+            
+            <tr>
+                <td rowspan="2">valor 1</td>
+                <td>valor 2</td>
+                <td>calor 3</td>
+                <td>valor 4</td>
+            </tr>
+            <tr>
+                <td>valor 5</td>
+                <td>calor 6</td>
+                <td>valor 7</td>
+            </tr>
+
+        </table>
+        <br>
+        <br><br><br>
+
+        <table border="2">
+            <caption> Ventas primer Semestre</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2"> Mes </th>
+                    <th colspan="4"> Concepto </th>
+                    <th rowspan="2"> Total </th>
+                </tr>
+                <tr>
+                    <th> Depto 1</th>
+                    <th> Depto 2</th>
+                    <th> Depto 3</th>
+                    <th> Depto 4</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th> Enero </th>
+                    <td>$ 2500</td>
+                    <td>$ 1500</td>
+                    <td>$ 3500</td>
+                    <td>$ 1000</td>
+                    <td>$ 8500</td>
+                </tr>
+                <tr>
+                    <th> Febrero </th>
+                    <td>$ 2000</td>
+                    <td>$ 1000</td>
+                    <td>$ 3000</td>
+                    <td>$ 1000</td>
+                    <td>$ 7000</td>
+                </tr>
+                <tr>
+                    <th> Marzo </th>
+                    <td>$ 500</td>
+                    <td>$ 1500</td>
+                    <td>$ 500</td>
+                    <td>$ 1000</td>
+                    <td>$ 3500</td>
+                </tr>
+                <tr>
+                    <th> Abril </th>
+                    <td>$ ----</td>
+                    <td>$ 500</td>
+                    <td>$ 500</td>
+                    <td>$ 1000</td>
+                    <td>$ 2000</td>
+                </tr>
+                <tr>
+                    <th> Mayo </th>
+                    <td>$ 2500</td>
+                    <td>$ ----</td>
+                    <td>$ 3000</td> 
+                    <td>$ 1000</td>
+                    <td>$ 6500</td>
+                </tr>
+                <tr>
+                    <th> Junio </th>
+                    <td>$ 500</td>
+                    <td>$ 1500</td>
+                    <td>$ ----</td>
+                    <td>$ 1000</td>
+                    <td>$ 3000</td>
+                </tr>
+
+
+                <tr>
+                    <th rowspan="3"> Totales </th>
+                    <tr>
+                        <td>$8000</td>
+                        <td>$6000</td>
+                        <td>$10500</td>
+                        <td>$6000</td>
+                        <td>$305000</td>
+                    </tr>
+                    <tr>
+                        <td>Depto 1</td>
+                        <td>Depto 2</td>
+                        <td>Depto 3</td>
+                        <td>Depto 4</td>
+                        <th>TOTAL</th>
+                    </tr>                                    
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="7"> Manuel Galeana Practica</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+
+        
+
+</body>
+</html>
