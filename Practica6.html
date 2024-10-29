@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 6</title>
+    <style>
+     /* Estilos generales */
+     body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Estilo de encabezado */
+        header {
+            background-color: #6a0dad;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        header a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Estilo del contenido principal */
+        h1 {
+            color: #6a0dad;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        p {
+            text-align: center;
+            margin: 15px;
+            line-height: 1.5;
+        }
+        
+        /* Estilo de la sección y el artículo */
+        .content-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        
+        article {
+            background-color: #d8bfd8;
+            padding: 15px;
+            border-radius: 8px;
+            width: 55%;
+        }
+
+        aside {
+            background-color: #e0cce0;
+            padding: 10px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+        
+        aside img {
+            border-radius: 8px;
+        }
+        
+        /* Estilo del pie de página */
+        footer {
+            background-color: #6a0dad;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: white; /* Fondo del botón */
+            color: #6a5acd; /* Color del texto del botón */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #f0f0f0; /* Color al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav><a href="">Inicio</a></nav>
+        <nav><a href="">Índice</a></nav>
+        <nav><a href="">Página Info</a></nav>
+    </header>
+
+    <h1>Práctica 6</h1>
+
+    <p>Uso de las sintaxis semánticas para la estructuración de una página HTML, donde se puede determinar la organización de cada uno de nuestros elementos.</p>
+
+    <div class="content-section">
+        <section>
+            <article>
+                <h2>Índice</h2>
+                <ul>
+                    <li>Prácticas HTML</li>
+                    <li>Header</li>
+                    <li>Nav</li>
+                    <li>Section</li>
+                    <li>Article</li>
+                    <li>Aside</li>
+                    <li>Footer</li>
+                </ul>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Sizas</h3>
+            <img src="C:\Users\Manuel\Downloads\nagi seishiro icon.jpg" alt="Nagi Seishiro" width="250" height="250">
+        </aside>
+    </div>
+
+    <a href="index.html">
+        <button class="btn">Regresar a INDEX</button>
+    </a>
+
+    <footer>
+        Actividad realizada por Manuel Galeana
+    </footer>
+
+</body>
+</html>
