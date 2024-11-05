@@ -21,7 +21,7 @@
         echo $vartext;
         $varnum1=5;
         $varnum2=6;
-         $res= " la suma de los valores $varnum1 + $varnum2 "$varnum1 + $varnum2;
+         $res= " la suma de los valores $varnum1 + $varnum2 ";
         echo "resultado de la suma en php  wakala es de = $res " ;
         
         ?>
